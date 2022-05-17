@@ -1,4 +1,12 @@
 package co.com.sofkau.clinica.administracion;
 
-public class Consultorio {
+import co.com.sofka.domain.generic.AggregateEvent;
+
+public class Consultorio extends AggregateEvent<ConsultorioId> {
+    protected Medico medico;
+    protected Auxiliar auxiliar;
+    protected PacienteId pacienteId;
+    public Consultorio(ConsultorioId entityId) {
+        super(entityId);
+    }
 }
