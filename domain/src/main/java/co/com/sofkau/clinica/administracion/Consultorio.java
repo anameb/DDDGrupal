@@ -6,7 +6,7 @@ public class Consultorio extends AggregateEvent<ConsultorioId> {
     protected Medico medico;
     protected Auxiliar auxiliar;
     protected PacienteId pacienteId;
-    public Consultorio(ConsultorioId entityId) {
-        super(entityId);
+    public Consultorio(ConsultorioId consultorioId) {
+        super(consultorioId);
     }
 }
