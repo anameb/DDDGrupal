@@ -8,5 +8,14 @@
     <artifactId>domain</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/co.com.sofka/domain -->
+        <dependency>
+            <groupId>co.com.sofka</groupId>
+            <artifactId>domain</artifactId>
+            <version>1.5.0</version>
+        </dependency>
+
+    </dependencies>
 
 </project>
