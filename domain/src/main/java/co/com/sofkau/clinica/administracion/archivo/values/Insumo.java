@@ -14,6 +14,6 @@ public class Insumo  implements ValueObject<String> {
 
     @Override
     public String value() {
-        return null;
+        return value;
     }
 }
