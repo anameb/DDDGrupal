@@ -1,9 +1,9 @@
-package co.com.sofkau.clinica.administracion;
+package co.com.sofkau.clinica.administracion.consultorio.commands;
 
 import co.com.sofka.domain.generic.Entity;
-import co.com.sofkau.clinica.administracion.values.Especialidad;
-import co.com.sofkau.clinica.administracion.values.MedicoId;
-import co.com.sofkau.clinica.administracion.values.Nombre;
+import co.com.sofkau.clinica.administracion.consultorio.commands.values.Especialidad;
+import co.com.sofkau.clinica.administracion.consultorio.commands.values.MedicoId;
+import co.com.sofkau.clinica.administracion.consultorio.commands.values.Nombre;
 
 public class Medico extends Entity<MedicoId> {
     protected Nombre nombre;

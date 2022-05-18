@@ -1,10 +1,11 @@
-package co.com.sofkau.clinica.administracion;
+package co.com.sofkau.clinica.administracion.consultorio.commands;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofkau.clinica.administracion.events.AuxiliarAsignado;
-import co.com.sofkau.clinica.administracion.events.ConsultorioCreado;
-import co.com.sofkau.clinica.administracion.events.MedicoAsignado;
+import co.com.sofkau.clinica.administracion.consultorio.commands.events.AuxiliarAsignado;
+import co.com.sofkau.clinica.administracion.consultorio.commands.events.ConsultorioCreado;
+import co.com.sofkau.clinica.administracion.consultorio.commands.events.MedicoAsignado;
+import co.com.sofkau.clinica.administracion.consultorio.commands.values.*;
 import co.com.sofkau.clinica.administracion.values.*;
 
 import java.util.List;
