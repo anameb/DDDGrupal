@@ -3,6 +3,7 @@ package co.com.sofkau.clinica.administracion.archivo;
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofkau.clinica.administracion.archivo.events.ArchivoCreado;
 import co.com.sofkau.clinica.administracion.archivo.events.HistoriaAlmacenada;
+import co.com.sofkau.clinica.administracion.archivo.events.InventarioAlmacenado;
 import co.com.sofkau.clinica.administracion.archivo.values.*;
 
 import java.util.Set;
@@ -30,6 +31,10 @@ public class Archivo extends AggregateEvent<ArchivoId>{
         appendChange(new HistoriaAlmacenada(historiaId, evolucion, fecha)).apply();
     }
 
+    public void AlmacenarInventario (Insumo insumo){
+        var inventarioId = new InventarioId();
+        appendChange(new InventarioAlmacenado(inventarioId, insumo )).apply();
+    }
     public Nombre nombre(){
         return nombre;
     }
