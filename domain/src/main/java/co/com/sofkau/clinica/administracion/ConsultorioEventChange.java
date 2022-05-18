@@ -10,5 +10,11 @@ public class ConsultorioEventChange extends EventChange {
             consultorio.auxiliar = event.getAuxiliar();
             consultorio.pacienteId = event.getPacienteId();
         });
+
+        apply((MedicoAsignado event) -> {
+            var medicoId = event.getMedicoId();
+            var medico = new Medico(medicoId, event.getNombre(), event.getEspecialidad());
+            consultorio.medico = medico;
+        });
     }
 }
