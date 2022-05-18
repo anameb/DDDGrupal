@@ -1,8 +1,8 @@
-package co.com.sofkau.clinica.administracion.consultorio.commands;
+package co.com.sofkau.clinica.administracion.consultorio;
 
 import co.com.sofka.domain.generic.Entity;
-import co.com.sofkau.clinica.administracion.consultorio.commands.values.AuxiliarId;
-import co.com.sofkau.clinica.administracion.consultorio.commands.values.Nombre;
+import co.com.sofkau.clinica.administracion.consultorio.values.AuxiliarId;
+import co.com.sofkau.clinica.administracion.consultorio.values.Nombre;
 
 public class Auxiliar extends Entity<AuxiliarId> {
 
