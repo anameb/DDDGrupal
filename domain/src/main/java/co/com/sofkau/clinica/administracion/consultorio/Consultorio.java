@@ -43,6 +43,10 @@ public class Consultorio extends AggregateEvent<ConsultorioId> {
     public void cambiarTelefonoMedico(MedicoId medicoId, Telefono telefono){
         appendChange(new TelefonoMedicoCambiado(medicoId, telefono)).apply();
     }
+
+    public void cambiarTelefonoAuxiliar(AuxiliarId auxiliarId, Telefono telefono){
+        appendChange(new TelefonoAuxiliarCambiado(auxiliarId, telefono)).apply();
+    }
     public Medico medico() {
         return medico;
     }
