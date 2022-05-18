@@ -3,6 +3,7 @@ package co.com.sofkau.clinica.administracion;
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofkau.clinica.administracion.events.ConsultorioCreado;
+import co.com.sofkau.clinica.administracion.events.MedicoAsignado;
 import co.com.sofkau.clinica.administracion.values.*;
 
 import java.util.List;
@@ -30,6 +31,11 @@ public class Consultorio extends AggregateEvent<ConsultorioId> {
     public void asignarMedico(Nombre nombre, Especialidad especialidad){
         var medicoId = new MedicoId();
         appendChange(new MedicoAsignado(medicoId, nombre, especialidad));
+    }
+
+    public void asignarAuxiliar(Nombre nombre){
+        var auxiliarId = new AuxiliarId();
+        appendChange(new AuxiliarAsignado(auxiliarId, nombre));
     }
 
     public Medico medico() {
