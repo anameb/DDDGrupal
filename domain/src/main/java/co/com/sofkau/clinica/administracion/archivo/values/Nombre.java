@@ -2,15 +2,17 @@ package co.com.sofkau.clinica.administracion.archivo.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
-public class Evolucion implements ValueObject<String> {
+import java.util.Objects;
+
+public class Nombre implements ValueObject<String> {
     private final String value;
 
-    public Evolucion(String value) {
-        this.value = value;
+    public Nombre(String value){
+        this.value = Objects.requireNonNull(value);
     }
 
+    @Override
     public String value() {
         return value;
     }
 }
-
