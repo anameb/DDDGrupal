@@ -1,7 +1,9 @@
 package co.com.sofkau.clinica.administracion;
 
 import co.com.sofka.domain.generic.EventChange;
+import co.com.sofkau.clinica.administracion.events.AuxiliarAsignado;
 import co.com.sofkau.clinica.administracion.events.ConsultorioCreado;
+import co.com.sofkau.clinica.administracion.events.MedicoAsignado;
 
 public class ConsultorioEventChange extends EventChange {
     public ConsultorioEventChange(Consultorio consultorio) {
@@ -15,6 +17,12 @@ public class ConsultorioEventChange extends EventChange {
             var medicoId = event.getMedicoId();
             var medico = new Medico(medicoId, event.getNombre(), event.getEspecialidad());
             consultorio.medico = medico;
+        });
+
+        apply((AuxiliarAsignado event)->{
+            var auxiliarId = event.getAuxiliarId();
+            var auxiliar = new Auxiliar(auxiliarId, event.getNombre());
+            consultorio.auxiliar = auxiliar;
         });
     }
 }
