@@ -1,6 +1,8 @@
 package co.com.sofkau.clinica.administracion;
 
 import co.com.sofka.domain.generic.AggregateEvent;
+import co.com.sofkau.clinica.administracion.events.ConsultorioCreado;
+import co.com.sofkau.clinica.administracion.values.ConsultorioId;
 import co.com.sofkau.clinica.administracion.values.PacienteId;
 
 public class Consultorio extends AggregateEvent<ConsultorioId> {
