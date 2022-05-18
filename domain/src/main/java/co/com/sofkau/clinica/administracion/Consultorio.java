@@ -14,4 +14,8 @@ public class Consultorio extends AggregateEvent<ConsultorioId> {
         appendChange(new ConsultorioCreado(medico, auxiliar, pacienteId)).apply();
         subscribe(new ConsultorioEventChange(this));
     }
+
+    public void asignarMedico(){
+
+    }
 }
