@@ -1,4 +1,4 @@
-package co.com.sofkau.clinica.administracion;
+package co.com.sofkau.clinica.administracion.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofkau.clinica.administracion.values.AuxiliarId;

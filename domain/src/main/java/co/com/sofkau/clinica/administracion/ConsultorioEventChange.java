@@ -1,6 +1,7 @@
 package co.com.sofkau.clinica.administracion;
 
 import co.com.sofka.domain.generic.EventChange;
+import co.com.sofkau.clinica.administracion.events.AuxiliarAsignado;
 import co.com.sofkau.clinica.administracion.events.ConsultorioCreado;
 import co.com.sofkau.clinica.administracion.events.MedicoAsignado;
 

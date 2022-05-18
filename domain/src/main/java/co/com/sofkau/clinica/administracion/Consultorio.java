@@ -2,6 +2,7 @@ package co.com.sofkau.clinica.administracion;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
+import co.com.sofkau.clinica.administracion.events.AuxiliarAsignado;
 import co.com.sofkau.clinica.administracion.events.ConsultorioCreado;
 import co.com.sofkau.clinica.administracion.events.MedicoAsignado;
 import co.com.sofkau.clinica.administracion.values.*;
