@@ -1,4 +1,4 @@
-package co.com.sofkau.clinica.administracion;
+package co.com.sofkau.clinica.administracion.archivo;
 
 import co.com.sofka.domain.generic.Entity;
 

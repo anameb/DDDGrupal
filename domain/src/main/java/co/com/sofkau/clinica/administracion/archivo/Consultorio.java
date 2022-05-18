@@ -1,7 +1,7 @@
-package co.com.sofkau.clinica.administracion;
+package co.com.sofkau.clinica.administracion.archivo;
 
 import co.com.sofka.domain.generic.AggregateEvent;
-import co.com.sofkau.clinica.administracion.values.PacienteId;
+import co.com.sofkau.clinica.administracion.archivo.values.PacienteId;
 
 public class Consultorio extends AggregateEvent<ConsultorioId> {
     protected Medico medico;
