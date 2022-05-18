@@ -8,6 +8,7 @@ Dominio
 
 Modelo de Dominio 
 
-![image](https://user-images.githubusercontent.com/88283220/169155005-c3c26379-8f02-4b02-b810-c8ae3610dc67.png)
+![image](https://user-images.githubusercontent.com/88283220/169158426-5c4d5aa8-cda4-4782-b238-6b3578d1c7c6.png)
+
 
 
