@@ -4,15 +4,16 @@ import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class PacienteId implements ValueObject<Integer> {
+public class Especialidad implements ValueObject<String> {
 
-    private final Integer value;
+    private final String value;
 
-    public PacienteId(Integer value) {
+    public Especialidad(String value){
         this.value = Objects.requireNonNull(value);
     }
 
-    public Integer value() {
+    @Override
+    public String value() {
         return value;
     }
 }
