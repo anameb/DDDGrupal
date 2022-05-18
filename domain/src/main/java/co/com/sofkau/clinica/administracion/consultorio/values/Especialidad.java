@@ -1,4 +1,4 @@
-package co.com.sofkau.clinica.administracion.consultorio.commands.values;
+package co.com.sofkau.clinica.administracion.consultorio.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 

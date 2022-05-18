@@ -1,8 +1,10 @@
 package co.com.sofkau.clinica.administracion.consultorio.commands;
 
 import co.com.sofka.domain.generic.Command;
-import co.com.sofkau.clinica.administracion.consultorio.commands.values.ConsultorioId;
-import co.com.sofkau.clinica.administracion.consultorio.commands.values.PacienteId;
+import co.com.sofkau.clinica.administracion.consultorio.Auxiliar;
+import co.com.sofkau.clinica.administracion.consultorio.Medico;
+import co.com.sofkau.clinica.administracion.consultorio.values.ConsultorioId;
+import co.com.sofkau.clinica.administracion.consultorio.values.PacienteId;
 
 public class CrearConsultorio extends Command {
 

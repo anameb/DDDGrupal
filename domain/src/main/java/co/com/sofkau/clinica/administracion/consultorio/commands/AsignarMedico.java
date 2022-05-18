@@ -1,9 +1,9 @@
 package co.com.sofkau.clinica.administracion.consultorio.commands;
 
 import co.com.sofka.domain.generic.Command;
-import co.com.sofkau.clinica.administracion.consultorio.commands.values.Especialidad;
-import co.com.sofkau.clinica.administracion.consultorio.commands.values.MedicoId;
-import co.com.sofkau.clinica.administracion.consultorio.commands.values.Nombre;
+import co.com.sofkau.clinica.administracion.consultorio.values.Especialidad;
+import co.com.sofkau.clinica.administracion.consultorio.values.MedicoId;
+import co.com.sofkau.clinica.administracion.consultorio.values.Nombre;
 
 public class AsignarMedico extends Command {
 

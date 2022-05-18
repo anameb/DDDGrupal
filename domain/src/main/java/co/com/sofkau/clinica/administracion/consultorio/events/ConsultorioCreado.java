@@ -1,9 +1,9 @@
-package co.com.sofkau.clinica.administracion.consultorio.commands.events;
+package co.com.sofkau.clinica.administracion.consultorio.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofkau.clinica.administracion.consultorio.commands.Auxiliar;
-import co.com.sofkau.clinica.administracion.consultorio.commands.Medico;
-import co.com.sofkau.clinica.administracion.consultorio.commands.values.PacienteId;
+import co.com.sofkau.clinica.administracion.consultorio.Auxiliar;
+import co.com.sofkau.clinica.administracion.consultorio.Medico;
+import co.com.sofkau.clinica.administracion.consultorio.values.PacienteId;
 
 public class ConsultorioCreado extends DomainEvent {
     private final Medico medico;
