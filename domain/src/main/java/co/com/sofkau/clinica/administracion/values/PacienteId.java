@@ -2,12 +2,17 @@ package co.com.sofkau.clinica.administracion.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
+import java.util.Objects;
+
 public class PacienteId implements ValueObject<Integer> {
 
-    public PacienteId(Integer id){
-        super(id);
+    private final Integer value;
+
+    public PacienteId(Integer value) {
+        this.value = Objects.requireNonNull(value);
     }
+
     public Integer value() {
-        return null;
+        return value;
     }
 }
