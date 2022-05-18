@@ -1,9 +1,9 @@
-package co.com.sofkau.clinica.administracion;
+package co.com.sofkau.clinica.administracion.consultorio.commands;
 
 import co.com.sofka.domain.generic.EventChange;
-import co.com.sofkau.clinica.administracion.events.AuxiliarAsignado;
-import co.com.sofkau.clinica.administracion.events.ConsultorioCreado;
-import co.com.sofkau.clinica.administracion.events.MedicoAsignado;
+import co.com.sofkau.clinica.administracion.consultorio.commands.events.AuxiliarAsignado;
+import co.com.sofkau.clinica.administracion.consultorio.commands.events.ConsultorioCreado;
+import co.com.sofkau.clinica.administracion.consultorio.commands.events.MedicoAsignado;
 
 public class ConsultorioEventChange extends EventChange {
     public ConsultorioEventChange(Consultorio consultorio) {

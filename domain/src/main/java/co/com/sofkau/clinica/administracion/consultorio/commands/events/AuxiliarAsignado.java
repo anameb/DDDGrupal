@@ -1,8 +1,8 @@
-package co.com.sofkau.clinica.administracion.events;
+package co.com.sofkau.clinica.administracion.consultorio.commands.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofkau.clinica.administracion.values.AuxiliarId;
-import co.com.sofkau.clinica.administracion.values.Nombre;
+import co.com.sofkau.clinica.administracion.consultorio.commands.values.AuxiliarId;
+import co.com.sofkau.clinica.administracion.consultorio.commands.values.Nombre;
 
 public class AuxiliarAsignado extends DomainEvent {
 
