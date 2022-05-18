@@ -4,6 +4,7 @@ import co.com.sofka.domain.generic.EventChange;
 import co.com.sofkau.clinica.administracion.atencion.events.AtencionCreado;
 import co.com.sofkau.clinica.administracion.atencion.events.CitaCreada;
 import co.com.sofkau.clinica.administracion.atencion.events.PacienteCreado;
+import co.com.sofkau.clinica.administracion.atencion.events.TelefonoPacienteCambiado;
 
 public class AtencionEventChange  extends EventChange {
 
@@ -32,6 +33,11 @@ public class AtencionEventChange  extends EventChange {
             }
             atencion.cita = cita;
 
+        });
+
+        apply((TelefonoPacienteCambiado event) ->{
+            var telefono = event.getTelefono();
+            atencion.paciente.cambiarTelefono(telefono);
         });
     }
 

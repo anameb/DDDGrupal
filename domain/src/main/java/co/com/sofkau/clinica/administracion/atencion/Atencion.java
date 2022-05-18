@@ -6,6 +6,7 @@ import co.com.sofkau.clinica.administracion.archivo.values.Fecha;
 import co.com.sofkau.clinica.administracion.atencion.events.AtencionCreado;
 import co.com.sofkau.clinica.administracion.atencion.events.CitaCreada;
 import co.com.sofkau.clinica.administracion.atencion.events.PacienteCreado;
+import co.com.sofkau.clinica.administracion.atencion.events.TelefonoPacienteCambiado;
 import co.com.sofkau.clinica.administracion.atencion.values.*;
 import co.com.sofkau.clinica.administracion.consultorio.ConsultorioEventChange;
 import co.com.sofkau.clinica.administracion.consultorio.values.Nombre;
@@ -41,6 +42,10 @@ public class Atencion extends AggregateEvent<AtencionId> {
     public void asignarPaciente(Nombre nombre, Telefono telefono) {
         var pacienteId = new PacienteId();
         appendChange(new PacienteCreado(pacienteId, nombre, telefono));
+    }
+
+    public void cambiarTelefonoPaciente(PacienteId pacienteId, Telefono telefono){
+        appendChange(new TelefonoPacienteCambiado(pacienteId, telefono)).apply();
     }
 
     public Paciente getPaciente() {
