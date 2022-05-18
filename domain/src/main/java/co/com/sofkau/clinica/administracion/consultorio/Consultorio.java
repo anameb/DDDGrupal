@@ -2,10 +2,7 @@ package co.com.sofkau.clinica.administracion.consultorio;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofkau.clinica.administracion.consultorio.events.AuxiliarAsignado;
-import co.com.sofkau.clinica.administracion.consultorio.events.ConsultorioCreado;
-import co.com.sofkau.clinica.administracion.consultorio.events.MedicoAsignado;
-import co.com.sofkau.clinica.administracion.consultorio.events.TelefonoMedicoCambiado;
+import co.com.sofkau.clinica.administracion.consultorio.events.*;
 import co.com.sofkau.clinica.administracion.consultorio.values.*;
 
 import java.util.List;
@@ -42,6 +39,10 @@ public class Consultorio extends AggregateEvent<ConsultorioId> {
 
     public void cambiarTelefonoMedico(MedicoId medicoId, Telefono telefono){
         appendChange(new TelefonoMedicoCambiado(medicoId, telefono)).apply();
+    }
+
+    public void cambiarTelefonoAuxiliar(AuxiliarId auxiliarId, Telefono telefono){
+        appendChange(new TelefonoAuxiliarCambiado(auxiliarId, telefono)).apply();
     }
     public Medico medico() {
         return medico;

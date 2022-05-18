@@ -16,4 +16,8 @@ public class Auxiliar extends Entity<AuxiliarId> {
         this.nombre = nombre;
         this.telefono = telefono;
     }
+
+    public void cambiarTelefono(Telefono telefono){
+        this.telefono = telefono;
+    }
 }
