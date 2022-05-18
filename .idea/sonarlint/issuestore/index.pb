@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
@@ -25,3 +26,5 @@ _domain/src/main/java/co/com/sofkau/clinica/administracion/consultorio/values/Co
 \domain/src/main/java/co/com/sofkau/clinica/administracion/consultorio/values/PacienteId.java,c\3\c329076cd181626b360bd92a65fb14994fad9861
 ˆ
 Xdomain/src/main/java/co/com/sofkau/clinica/administracion/consultorio/values/Nombre.java,1\4\1491ac2f6e20a29887dfe0a4d5f38601d197c43b
+=======
+>>>>>>> de6d2eff6a3c0072b036b53a6da38e5ac71c9f15
