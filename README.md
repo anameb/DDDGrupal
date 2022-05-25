@@ -1,6 +1,6 @@
 # DDDGrupal
 
-Dominio 
+Dominio consultorio odontológico 
 
 ![image](https://user-images.githubusercontent.com/88283220/169149564-0515011c-0ba1-47e6-9216-51973e663566.png)
 
@@ -12,3 +12,7 @@ Modelo de Dominio
 
 
 
+Integrantes: Rodrigo G. 
+Santiago viana 
+Jorge Reyes 
+Ana Milena Estrada 
